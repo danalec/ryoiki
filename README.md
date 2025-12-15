@@ -2,7 +2,7 @@
 
 Ryoiki is a separate tool of the Eien project that provides a 3D treemap visualization and code scanning pipeline for software repositories using tokei. It combines a Rust backend for scanning and metrics generation with a Svelte/Three.js web UI for interactive exploration.
 
-![screenshot](.\screenshot.png)
+![screenshot](screenshot.png)
 
 ## Project Overview
 
