@@ -1,0 +1,6 @@
+{
+  "paths": {
+    "metrics_dir": "tools/metrics",
+    "audit_dir": "../.."
+  }
+}

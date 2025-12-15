@@ -1,0 +1,29 @@
+[package]
+name = "ryoiki"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+
+[workspace]
+members = ["crates/analyzer"]
+
+[dependencies]
+tokei = "13.0.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+ignore = "0.4"
+axum = "0.7"
+tokio = { version = "1.0", features = ["full"] }
+tower-http = { version = "0.5", features = ["cors", "fs"] }
+
+[build-dependencies]
+tokei = "13.0.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+ignore = "0.4"
+
+[dev-dependencies]
+tokei = "13.0.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+ignore = "0.4"

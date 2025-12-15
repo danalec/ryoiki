@@ -1,0 +1,29 @@
+{
+  "name": "ryoiki",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "packages/ui",
+    "crates/analyzer/pkg"
+  ],
+  "scripts": {
+    "dev": "npm run build:wasm && npm run dev:web",
+    "dev:web": "cd apps/web && npm run dev",
+    "build": "npm run build:wasm && npm run build:web",
+    "build:wasm": "cd crates/analyzer && wasm-pack build --target web --out-dir pkg",
+    "build:web": "cd apps/web && npm run build",
+    "check": "npm run check:web",
+    "check:web": "cd apps/web && npm run check",
+    "lint": "npm run lint:web",
+    "lint:web": "cd apps/web && npm run lint",
+    "test": "npm run test:wasm",
+    "test:wasm": "cd crates/analyzer && cargo test"
+  },
+  "devDependencies": {
+    "wasm-pack": "^0.13.1"
+  },
+  "dependencies": {
+    "vitest": "4.0.15"
+  }
+}

@@ -1,0 +1,7 @@
+eslint.config.js
+index.html
+postcss.config.js
+src/**
+svelte.config.js
+tailwind.config.js
+vite.config.ts
